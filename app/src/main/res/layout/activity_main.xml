@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/margem">
+
+
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="363dp"
+        android:layout_height="100dp"
+        android:background="@color/lightgrey"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/texto"
+            android:textSize="20sp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="230dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/red"
+            android:inputType="textCapCharacters" />
+
+        <ImageButton
+            android:id="@+id/imgButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            app:srcCompat="@android:drawable/ic_menu_upload" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/tamLetra"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/skbRed"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:max="80"
+            android:progressTint="@color/red"
+            android:thumbTint="@color/red" />
+
+        <TextView
+            android:id="@+id/txtTamanhoSp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="18sp"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/estilo"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/chkNegrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkNegrito"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/chkItalico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkItalico"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/chkMaiusculas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chkMaiusculas"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/corLetra"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/rdgCor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbRosa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/rosa"/>
+
+        <RadioButton
+            android:id="@+id/rdbVerde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/verde"/>
+
+        <RadioButton
+            android:id="@+id/rdbAzul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/azul"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>
